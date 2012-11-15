@@ -1,0 +1,53 @@
+<div class="payment-errors"></div>
+
+<form action="<%= payments_path %>" method="POST" id="payment-form">
+  <div class="form-row">
+    <label>Card Number</label>
+    <input type="text" size="20" autocomplete="off" class="cc_number required"/>
+  </div>
+  <div class="form-row">
+    <label>CVC</label>
+    <input type="text" size="4" autocomplete="off" class="cc_cvc required input-mini"/>
+  </div>
+  <div class="form-row">
+    <label>Expiration (MM/YYYY)</label>
+    <input type="text" size="2" class="cc_exp_month required input-mini"/>
+    <span> / </span>
+    <input type="text" size="4" class="cc_exp_year required input-mini"/>
+  </div>
+  <div class="form-row">
+    <label>First Name</label>
+    <div class="controls controls-row">
+      <input type="text" size="25" autocomplete="off" class="firstname" name="firstname"/>
+    </div>
+  </div>
+  <div class="form-row">
+    <label>Last Name</label>
+    <input type="text" size="25" autocomplete="off" class="lastname" name="lastname"/>
+  </div>
+  <div class="form-row">
+    <label>Address: Street</label>
+    <input type="text" size="20" autocomplete="off" class="address-street"/>
+  </div>
+  <div class="form-row">
+    <label>City</label>
+    <input type="text" size="25" autocomplete="off" class="address-city" name="city"/>
+  </div>
+  <div class="form-row">
+    <label>State</label>
+    <input type="text" size="25" autocomplete="off" class="address-state" name="state"/>
+  </div>
+  <div class="form-row">
+    <label>Zip</label>
+    <input type="text" size="5" autocomplete="off" class="address-zip input-mini" name="zip"/>
+  </div>
+  <div class="form-row">
+    <label>Phone Number</label>
+    <input type="text" size="20" autocomplete="off" class="phone-number" name="phone"/>
+  </div>
+  <div class="form-row">
+    <label>Email</label>
+    <input type="text" size="20" autocomplete="off" class="email" name="email"/>
+  </div>
+  <button type="submit" class="submit-button btn btn-primary">Submit Payment</button>
+</form>
