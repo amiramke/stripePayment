@@ -3,7 +3,7 @@
 <% end %>
 
 <% if @charge %>
-  <p>Thank you for your payment! $<%= @charge.amount / 100 %> has been charged to <%= @email %>.</p>
+  <p>Thank you for your payment! $<%= @charge.amount / 100 %> has been charged to <%= @charge.email %>.</p>
 <% end %>
 
 <p><%= link_to "Make another payment", payments_path %></p>
